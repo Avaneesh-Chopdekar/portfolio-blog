@@ -1,0 +1,16 @@
+---
+interface Props {
+  src: string;
+  title: string;
+}
+
+const { src, title } = Astro.props;
+---
+
+<div class="bg-gray-100 dark:bg-gray-700 p-8 md:px-8 md:py-16">
+  <img src={src} alt="" class="w-32 h-32 object-contain mb-4 select-none" />
+  <span class="text-3xl font-bold">{title}</span>
+  <p class="opacity-75 mt-3" style="text-wrap: balance;">
+    <slot />
+  </p>
+</div>
