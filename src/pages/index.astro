@@ -11,6 +11,8 @@ import Card from "../components/Card.astro";
 <html lang="en">
   <head>
     <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"
+    ></script>
   </head>
   <body class="min-h-[100svh] w-full dark:bg-gray-800 dark:text-white">
     <Header title={SITE_TITLE} />
@@ -33,5 +35,16 @@ import Card from "../components/Card.astro";
       </Card>
     </section>
     <Footer />
+    <script>
+      if (window.netlifyIdentity) {
+        window.netlifyIdentity.on("init", (user) => {
+          if (!user) {
+            window.netlifyIdentity.on("login", () => {
+              document.location.href = "/admin/";
+            });
+          }
+        });
+      }
+    </script>
   </body>
 </html>
