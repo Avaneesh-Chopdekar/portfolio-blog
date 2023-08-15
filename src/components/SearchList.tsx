@@ -31,7 +31,7 @@ export default function SearchList({ list }) {
       </picture>
 
       <section>
-        <ul>
+        <ul className="flex flex-col-reverse">
           {list
             .filter((blog: { data: { title: string } }) => {
               if (query === "") {
@@ -61,9 +61,9 @@ export default function SearchList({ list }) {
                   <p className="my-2 text-gray-500 dark:text-gray-400">
                     {formatDate(blog.data.pubDate)}
                   </p>
-                  <p className="my-2 text-gray-500 dark:text-gray-400">
+                  <p className="my-2 text-gray-500 dark:text-gray-400 inter">
                     {blog.data.description.length > 120
-                      ? `${blog.data.description.slice(0, 130)}...`
+                      ? `${blog.data.description.slice(0, 120)}...`
                       : blog.data.description}
                   </p>
                   <hr />
