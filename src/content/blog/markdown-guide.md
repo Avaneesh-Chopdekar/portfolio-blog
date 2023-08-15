@@ -1,7 +1,12 @@
 ---
-title: 'A Guide to Markdown'
-description: 'Markdown is a lightweight markup language for creating formatted text using a plain-text editor. John Gruber created Markdown in 2004 as a markup language that is appealing to human readers in its source code form. Markdown is widely used in blogging, instant messaging, online forums, collaborative software, documentation pages, and readme files. Markdown files end with .md extension.'
-pubDate: 'July 8, 2023'
+title: A Guide to Markdown
+description: Markdown is a lightweight markup language for creating formatted
+  text using a plain-text editor. John Gruber created Markdown in 2004 as a
+  markup language that is appealing to human readers in its source code form.
+  Markdown is widely used in blogging, instant messaging, online forums,
+  collaborative software, documentation pages, and readme files. Markdown files
+  end with .md extension.
+pubDate: 2023-07-08T06:30:00.000Z
 ---
 
 ## Headers
