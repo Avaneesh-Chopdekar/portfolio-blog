@@ -30,7 +30,9 @@ const { title, description, pubDate } = Astro.props;
         <p class="py-4 text-lg dark:text-gray-300">
           {description}
         </p>
-        <div class="prose xl:prose-lg dark:prose-invert max-w-full">
+        <div
+          class="prose xl:prose-lg dark:prose-invert max-w-full prose-img:rounded-lg"
+        >
           <slot />
         </div>
       </article>
