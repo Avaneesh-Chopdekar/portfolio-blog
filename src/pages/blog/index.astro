@@ -2,7 +2,7 @@
 import BaseHead from "../../components/BaseHead.astro";
 import Header from "../../components/Header.astro";
 import Footer from "../../components/Footer.astro";
-import { SITE_TITLE, SITE_DESCRIPTION } from "../../consts";
+import { SITE_TITLE, SITE_DESCRIPTION, SITE_COLOR } from "../../consts";
 import { getCollection } from "astro:content";
 import SearchList from "../../components/SearchList";
 
@@ -14,9 +14,11 @@ const articles = (await getCollection("blog")).sort(
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+    <BaseHead title={SITE_TITLE + "'s Blog"} description={SITE_DESCRIPTION} />
   </head>
-  <body class="min-h-[100svh] w-full dark:bg-gray-800 dark:text-white">
+  <body
+    class={`min-h-[100svh] w-full dark:bg-${SITE_COLOR}-800 dark:text-white`}
+  >
     <Header />
     <SearchList list={articles} client:load />
     <Footer />

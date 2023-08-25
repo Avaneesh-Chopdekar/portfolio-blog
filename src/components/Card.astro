@@ -7,10 +7,10 @@ interface Props {
 const { src, title } = Astro.props;
 ---
 
-<div class="bg-gray-100 dark:bg-gray-700 p-8 md:px-8 md:py-16">
+<div class="p-8 lg:px-8 lg:py-16 md:block">
   <img src={src} alt="" class="w-32 h-32 object-contain mb-4 select-none" />
   <span class="text-3xl font-bold">{title}</span>
-  <p class="opacity-75 mt-3" style="text-wrap: balance;">
+  <p class="opacity-75 mt-3 inter" style="text-wrap: balance;">
     <slot />
   </p>
 </div>
