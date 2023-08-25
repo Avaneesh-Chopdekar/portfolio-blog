@@ -7,7 +7,7 @@ export default function SearchList({ list }) {
   return (
     <main className="w-11/12 sm:w-4/5 mb-4 mx-auto">
       <input
-        className="text-lg px-4 py-2 rounded w-full outline-none border-none bg-zinc-200 dark:bg-zinc-700 dark:text-white placeholder:text-zinc-500 dark:placeholder:text-zinc-400"
+        className="text-lg px-4 py-2 rounded w-full outline-none border-none bg-gray-200 dark:bg-gray-700 dark:text-white placeholder:text-gray-500 dark:placeholder:text-gray-400"
         type="text"
         value={query}
         onChange={(e) => setQuery(e.target.value)}
@@ -58,10 +58,10 @@ export default function SearchList({ list }) {
                       </span>
                     </p>
                   </a>
-                  <p className="my-2 text-zinc-500 dark:text-zinc-400">
+                  <p className="mt-1 text-gray-500 dark:text-gray-400 inter">
                     {formatDate(blog.data.pubDate)}
                   </p>
-                  <p className="my-2 text-zinc-500 dark:text-zinc-400 inter">
+                  <p className="my-2 text-gray-500 dark:text-gray-400 inter">
                     {blog.data.description.length > 120
                       ? `${blog.data.description.slice(0, 120)}...`
                       : blog.data.description}

@@ -2,7 +2,7 @@
 import BaseHead from "../components/BaseHead.astro";
 import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
-import { SITE_TITLE, SITE_DESCRIPTION, SITE_COLOR } from "../consts";
+import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
 import HeroSection from "../components/HeroSection.astro";
 import Card from "../components/Card.astro";
 ---
@@ -12,13 +12,11 @@ import Card from "../components/Card.astro";
   <head>
     <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
   </head>
-  <body
-    class={`min-h-[100svh] w-full dark:bg-${SITE_COLOR}-800 dark:text-white`}
-  >
+  <body class="min-h-[100svh] w-full dark:bg-gray-800 dark:text-white">
     <Header title={SITE_TITLE} />
     <HeroSection />
     <section
-      class={`w-full flex flex-col lg:flex-row items-center bg-${SITE_COLOR}-100 dark:bg-${SITE_COLOR}-700`}
+      class="w-full flex flex-col lg:flex-row items-center bg-gray-100 dark:bg-gray-700"
     >
       <Card title="Web Development" src="./web.png">
         I am experienced with Web Development in frameworks like React.js,

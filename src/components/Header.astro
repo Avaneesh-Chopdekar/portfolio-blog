@@ -1,10 +1,10 @@
 ---
-import { SITE_TITLE, SITE_COLOR } from "../consts";
+import { SITE_TITLE } from "../consts";
 ---
 
 <header>
   <nav
-    class={`sticky top-0 left-0 right-0 shadow-md dark:shadow-none shadow-${SITE_COLOR}-500 py-2.5 mb-4 bg-blue-500 dark:bg-${SITE_COLOR}-900`}
+    class="sticky top-0 left-0 right-0 shadow-md dark:shadow-none shadow-gray-500 py-2.5 mb-4 bg-blue-500 dark:bg-gray-900"
   >
     <div
       class="w-11/12 sm:w-4/5 mx-auto flex flex-col sm:flex-row justify-between items-center"
@@ -12,19 +12,19 @@ import { SITE_TITLE, SITE_COLOR } from "../consts";
       <h2 class="text-2xl text-white">
         <a href="/">{SITE_TITLE}</a>
       </h2>
-      <ul class="flex items-center pt-1.5 sm:pt-0">
+      <ul class="flex items-center pt-1.5 sm:pt-0 inter">
         <li
-          class={`px-3 text-white sm:hover:-translate-y-1 hover:text-blue-100 dark:hover:text-${SITE_COLOR}-400 transition-all`}
+          class="px-3 text-white sm:hover:-translate-y-1 hover:text-blue-100 dark:hover:text-gray-400 transition-all"
         >
           <a href="/">Home</a>
         </li>
         <li
-          class={`px-3 text-white sm:hover:-translate-y-1 hover:text-blue-100 dark:hover:text-${SITE_COLOR}-400 transition-all`}
+          class="px-3 text-white sm:hover:-translate-y-1 hover:text-blue-100 dark:hover:text-gray-400 transition-all"
         >
           <a href="/blog">Blog</a>
         </li>
         <li
-          class={`px-3 text-white sm:hover:-translate-y-1 hover:text-blue-100 dark:hover:text-${SITE_COLOR}-400 transition-all`}
+          class="px-3 text-white sm:hover:-translate-y-1 hover:text-blue-100 dark:hover:text-gray-400 transition-all"
         >
           <a href="https://github.com/Avaneesh-Chopdekar">Github</a>
         </li>
