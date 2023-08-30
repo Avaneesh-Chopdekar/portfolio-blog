@@ -26,7 +26,7 @@ export default function SearchList({ list }) {
           className="rounded-md w-full"
           src="https://source.unsplash.com/1200x300?mountains"
           alt=""
-          loading="eager"
+          loading="lazy"
         />
       </picture>
 
