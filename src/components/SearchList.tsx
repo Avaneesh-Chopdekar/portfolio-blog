@@ -20,7 +20,7 @@ export default function SearchList({ list }) {
         <source
           media="(max-width: 600px)"
           className="rounded-md w-full"
-          srcSet="https://source.unsplash.com/1200x600?mountains"
+          srcSet="https://source.unsplash.com/600x300?mountains"
         />
         <img
           className="rounded-md w-full"
